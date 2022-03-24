@@ -418,7 +418,7 @@ h6 {
   margin-bottom: 50px;
   font-size: 24px;
 }
-#hero .btn-get-started {
+.btn-get-started {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -431,13 +431,10 @@ h6 {
   background: #044450;
   border: 2px solid #044450;
 }
-#hero .btn-get-started:hover {
+.btn-get-started:hover {
+  color: #fff;
   background: #e4b42c;
   border: 2px solid #e4b42c;
-}
-.btn-get-started:hover {
-  border-color: #fff;
-  background: rgba(255, 255, 255, 0.1);
 }
 #hero .btn-watch-video {
   font-size: 16px;
@@ -866,6 +863,20 @@ section {
 #footer .footer-top .footer-links ul a:hover {
   color: #03454e;
 }
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+#footer .credits a {
+  transition: 0.3s;
+}
 #footer .footer-top .footer-newsletter form {
   margin-top: 30px;
   background: #fff;
@@ -894,17 +905,4 @@ section {
 }
 #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
   background: #ff5e31;
-}
-#footer .copyright {
-  text-align: center;
-  padding-top: 30px;
-}
-#footer .credits {
-  padding-top: 10px;
-  text-align: center;
-  font-size: 13px;
-  color: #fff;
-}
-#footer .credits a {
-  transition: 0.3s;
 }
