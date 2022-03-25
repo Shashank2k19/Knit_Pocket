@@ -122,6 +122,9 @@ h6 {
   /* background: rgba(255, 255, 255, 0.85); */
   padding: 10px 0;
 }
+.mt-n5 {
+  margin-top: -2.75rem !important;
+}
 #header .logo {
   font-size: 32px;
   margin: 0;
@@ -731,14 +734,15 @@ section {
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
+
 .breadcrumbs {
-  padding: 15px 0;
+  padding: 2px 15px !important;
   background: #f0f4f8;
   min-height: 40px;
-  margin-top: 78px;
+  margin-top: 90px;
 }
 .breadcrumbs h2 {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 400;
 }
 .breadcrumbs ol {
@@ -876,33 +880,4 @@ section {
 }
 #footer .credits a {
   transition: 0.3s;
-}
-#footer .footer-top .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 4px;
-}
-#footer .footer-top .footer-newsletter form input[type="email"] {
-  border: 0;
-  padding: 4px;
-  width: calc(100% - 110px);
-}
-#footer .footer-top .footer-newsletter form input[type="submit"] {
-  position: absolute;
-  top: 0;
-  right: -2px;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px;
-  background: #03454e;
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 0 4px 4px 0;
-}
-#footer .footer-top .footer-newsletter form input[type="submit"]:hover {
-  background: #ff5e31;
 }

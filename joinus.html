@@ -83,7 +83,7 @@
       <section class="breadcrumbs">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
-            <h2>JOIN US</h2>
+            <h2>Join us</h2>
             <ol>
               <li><a href="index.html">Home</a></li>
               <li>JOIN US</li>
@@ -94,124 +94,117 @@
       <!-- End Breadcrumbs -->
 
       <section class="inner-page">
-        <div class="container">
-          <form>
+        <div class="container mt-n5">
+          <form action="mail.php" method="post">
             <div class="row">
-              <div class="col-md-6">
-                <label for="name" class="form-label">Name : </label>
-                <input type="text" class="form-control" id="name" />
+              <div class="col-md-6 mt-4">
+                <label class="form-label">Name : </label>
+                <input
+                  type="text"
+                  class="form-control border-warning"
+                  id="name"
+                  name="name"
+                />
+                <div class="invalid-feedback">
+                  Name must be between 3 and 10 characters
+                </div>
               </div>
-              <div class="col-md-6">
-                <label for="Email" class="form-label">Email : </label>
-                <input type="email" class="form-control" id="Email" />
+              <div class="col-md-6 mt-4">
+                <label class="form-label">Email : </label>
+                <input
+                  type="text"
+                  class="form-control border-warning"
+                  id="email"
+                  name="email"
+                />
+                <div class="invalid-feedback">Enter a valid email</div>
               </div>
             </div>
-            <br />
+
             <div class="row">
-              <div class="col-md-6">
-                <label for="Contact" class="form-label">Contact No : </label>
-                <input type="tel" class="form-control" id="contactno" />
+              <div class="col-md-6 mt-4">
+                <label class="form-label">Contact No : </label>
+                <input
+                  type="text"
+                  class="form-control border-warning"
+                  id="phone"
+                  name="phone"
+                />
+                <div class="invalid-feedback">Enter a valid phone</div>
               </div>
-              <div class="col-md-6">
-                <label for="whatsapp " class="form-label">Whatsapp No : </label>
-                <input type="tel" class="form-control" id="Whatsappno" />
+              <div class="col-md-6 mt-4">
+                <label class="form-label">Whatsapp No : </label>
+                <input
+                  type="tel"
+                  class="form-control border-warning"
+                  id="whatsapp"
+                  name="whatsapp"
+                />
+                <div class="invalid-feedback">Enter a valid Whatsapp No</div>
               </div>
             </div>
-            <br />
-            <div class="mb-3">
-              <label for="Skill" class="form-label"
+
+            <div class="mb-3 mt-4">
+              <label class="form-label"
                 >Can you describe your skill sets and the kind of freelance
                 projects you would like to be a part of?
               </label>
-              <input type="textfield" class="form-control" id="skill" />
+              <textarea
+                class="form-control border-warning"
+                id="skill"
+                name="skill"
+                rows="2"
+              ></textarea>
             </div>
-            <div class="mb-3">
-              <label for="drivelink" class="form-label"
+            <div class="mb-3 mt-4">
+              <label class="form-label"
                 >Can you please share a drive link/ website to showcase your
                 past work or portfolio.</label
               >
-              <input type="text" class="form-control" id="drivelink" />
+              <textarea
+                class="form-control border-warning"
+                id="drivelink"
+                name="drivelink"
+                rows="2"
+              ></textarea>
             </div>
-            <div class="mb-3">
-              <label for="reffer" class="form-label"
+            <div class="mb-3 mt-4">
+              <label class="form-label"
                 >Referral Incentive: If you have any friends who could be a good
                 fit too, please share their email ID. [ You'll receive 10% from
                 their 1st project with us ]</label
               >
-              <input type="text" class="form-control" id="reffer" />
+              <textarea
+                rows="2"
+                class="form-control border-warning"
+                id="reffer"
+                name="reffer"
+              ></textarea>
             </div>
-            <div class="mb-3">
-              <label for="intrest" class="form-label"
+            <div class="mb-3 mt-4">
+              <label class="form-label"
                 >At Knitpocket, we are building a self-sustaining ecosystem for
                 freelancers, creators and brands to facilitate seamless skill
                 share, collaboration, monetisation and networking opportunities.
                 Would you be interested in learning more?</label
               >
-              <input type="text" class="form-control" id="intrest" />
+              <input
+                type="text"
+                class="form-control border-warning"
+                id="intrest"
+                name="intrest"
+                placeholder="Yes / No"
+              />
             </div>
             <div class="text-center">
-              <a class="btn-get-started scrollto">Submit</a>
+              <input
+                type="submit"
+                value="Submit"
+                class="btn-get-started scrollto"
+              />
             </div>
           </form>
           <br />
-          <!-- <form
-            action="forms/contact.php"
-            method="post"
-            role="form"
-            class="php-email-form"
-          >
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <input
-                  type="text"
-                  name="name"
-                  class="form-control"
-                  id="name"
-                  placeholder="Your Name"
-                  required
-                />
-              </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input
-                  type="email"
-                  class="form-control"
-                  name="email"
-                  id="email"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-            </div>
-            <div class="form-group mt-3">
-              <input
-                type="text"
-                class="form-control"
-                name="subject"
-                id="subject"
-                placeholder="Subject"
-                required
-              />
-            </div>
-            <div class="form-group mt-3">
-              <textarea
-                class="form-control"
-                name="message"
-                rows="5"
-                placeholder="Message"
-                required
-              ></textarea>
-            </div>
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">
-                Your message has been sent. Thank you!
-              </div>
-            </div>
-            <div class="text-center">
-              <button type="submit">Send Message</button>
-            </div>
-          </form> -->
         </div>
       </section>
     </main>
