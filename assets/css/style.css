@@ -12,7 +12,7 @@ a {
 }
 
 a:hover {
-  color: #e4b42c;
+  color: #e5b429;
   text-decoration: none;
 }
 
@@ -47,7 +47,7 @@ h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #e4b42c;
+  background: #e5b429;
   color: #fff;
 }
 .back-to-top.active {
@@ -224,7 +224,7 @@ h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #e4b42c;
+  background-color: #e5b429;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -289,7 +289,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-  color: #e4b42c;
+  color: #e5b429;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -449,7 +449,7 @@ h6 {
   line-height: 56px;
   text-transform: uppercase;
   font-family: futura;
-  color: #e4b42c;
+  color: #e5b429;
 }
 #hero h1:hover {
   font-size: 70px;
@@ -470,14 +470,20 @@ h6 {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #e4b42c;
-  border: 2px solid #e4b42c;
+  background: #e5b429;
+  border: 2px solid #e5b429;
 }
 .btn-get-started:hover {
-  color: #e4b42c;
+  color: #e5b429;
   background: #fff;
   border: 2px solid #fff;
 }
+.btn-submit:hover {
+  color: #fff;
+  background: #03454e;
+  border: 2px solid #fff;
+}
+
 #hero .btn-watch-video {
   font-size: 16px;
   display: inline-block;
@@ -555,7 +561,7 @@ aside {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #e4b42c;
+  background: #e5b429;
   margin: 4px 10px;
 }
 .section-title p {
@@ -650,7 +656,7 @@ aside {
   font-size: 32px;
   padding-right: 11px;
   line-height: 1;
-  color: #e4b42c;
+  color: #e5b429;
 }
 .services-box .icon-box h3 {
   font-weight: 700;
@@ -663,8 +669,10 @@ aside {
 @media (max-width: 768px) {
   .services-box .icon-box h3 {
     font-weight: 600;
-
-    font-size: 14px;
+    font-size: 13px;
+  }
+  .services-box .icon-box i {
+    font-size: 26px;
   }
 }
 
