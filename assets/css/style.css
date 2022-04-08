@@ -527,6 +527,10 @@ section {
   padding: 60px 0;
   overflow: hidden;
 }
+aside {
+  padding: 60px 0;
+  overflow: hidden;
+}
 
 .section-bg {
   background-color: #f0f4f8;
@@ -626,39 +630,49 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# services-box
 --------------------------------------------------------------*/
-.services .icon-box {
-  margin-bottom: 20px;
-  padding: 30px;
-  border-radius: 6px;
-  background: #fff;
+.services-box {
+  padding-top: 20px;
 }
-.services .icon-box i {
-  float: left;
+.services-box .icon-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  transition: ease-in-out 0.3s;
+  box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
+}
+.services-box .icon-box:hover {
+  transform: translateY(-10px);
+}
+
+.services-box .icon-box i {
+  font-size: 32px;
+  padding-right: 11px;
+  line-height: 1;
   color: #e4b42c;
-  font-size: 40px;
-  line-height: 0;
 }
-.services .icon-box h4 {
-  margin-left: 70px;
+.services-box .icon-box h3 {
   font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
 }
-.services .icon-box h4 a {
-  color: #365870;
-  transition: 0.3s;
+
+@media (max-width: 768px) {
+  .services-box .icon-box h3 {
+    font-weight: 600;
+
+    font-size: 14px;
+  }
 }
-.services .icon-box .icon-box:hover h4 a {
-  color: #03454e;
+
+.services-box .icon-box h3 a {
+  color: #493c3e;
+  transition: ease-in-out 0.3s;
 }
-.services .icon-box p {
-  margin-left: 70px;
-  line-height: 24px;
-  font-size: 14px;
-}
-.services .icon-box:hover h4 a {
+.services-box .icon-box:hover a {
   color: #03454e;
 }
 
@@ -670,6 +684,10 @@ section {
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
+}
+.contact .hire {
+  padding-top: 50px;
+  padding-bottom: 77px;
 }
 .contact .info-box i {
   font-size: 32px;
@@ -819,7 +837,6 @@ section {
     display: inline-block;
   }
 }
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -828,88 +845,6 @@ section {
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
-}
-#footer .footer-top {
-  background: #15222b;
-  border-bottom: 1px solid #1d303c;
-  padding: 60px 0 30px 0;
-}
-.footerlogo {
-  width: 270px;
-}
-#footer .footer-top .footer-info {
-  margin-bottom: 30px;
-}
-#footer .footer-top .footer-info h3 {
-  font-size: 28px;
-  margin: 0 0 15px 0;
-  padding: 2px 0 2px 0;
-  line-height: 1;
-  font-weight: 700;
-}
-#footer .footer-top .footer-info p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
-  color: #fff;
-}
-#footer .footer-top .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.08);
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 4px;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-#footer .footer-top .social-links a:hover {
-  background: #03454e;
-  color: #fff;
-  text-decoration: none;
-}
-#footer .footer-top h4 {
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-  position: relative;
-  padding-bottom: 12px;
-}
-#footer .footer-top .footer-links {
-  margin-bottom: 30px;
-}
-#footer .footer-top .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-#footer .footer-top .footer-links ul i {
-  padding-right: 2px;
-  color: #e4b42c;
-  font-size: 18px;
-  line-height: 1;
-}
-#footer .footer-top .footer-links ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-#footer .footer-top .footer-links ul li:first-child {
-  padding-top: 0;
-}
-#footer .footer-top .footer-links ul a {
-  color: #fff;
-  transition: 0.3s;
-  display: inline-block;
-  line-height: 1;
-}
-#footer .footer-top .footer-links ul a:hover {
-  color: #03454e;
 }
 
 #footer .copyright {
