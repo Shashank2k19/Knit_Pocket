@@ -120,7 +120,7 @@
 
       <section class="inner-page">
         <div class="container mt-n5">
-          <form action="mail.php" method="post">
+          <form name="google-sheet" method="post">
             <div class="row">
               <div class="col-md-6 mt-4">
                 <label class="form-label">Name : </label>
@@ -128,7 +128,7 @@
                   type="text"
                   class="form-control border-warning"
                   id="name"
-                  name="name"
+                  name="Name"
                 />
                 <div class="invalid-feedback">
                   Name must be between 3 and 10 characters
@@ -140,7 +140,7 @@
                   type="text"
                   class="form-control border-warning"
                   id="email"
-                  name="email"
+                  name="Email"
                 />
                 <div class="invalid-feedback">Enter a valid email</div>
               </div>
@@ -152,7 +152,7 @@
                   type="text"
                   class="form-control border-warning"
                   id="phone"
-                  name="phone"
+                  name="Phone_No"
                 />
                 <div class="invalid-feedback">Enter a valid phone</div>
               </div>
@@ -162,7 +162,7 @@
                   type="tel"
                   class="form-control border-warning"
                   id="whatsapp"
-                  name="whatsapp"
+                  name="Whatsapp_No"
                 />
                 <div class="invalid-feedback">Enter a valid Whatsapp No</div>
               </div>
@@ -176,7 +176,7 @@
               <textarea
                 class="form-control border-warning"
                 id="skill"
-                name="skill"
+                name="Describe_Skill"
                 rows="2"
               ></textarea>
             </div>
@@ -188,7 +188,7 @@
               <textarea
                 class="form-control border-warning"
                 id="drivelink"
-                name="drivelink"
+                name="Drive_link"
                 rows="2"
               ></textarea>
             </div>
@@ -202,7 +202,7 @@
                 rows="2"
                 class="form-control border-warning"
                 id="reffer"
-                name="reffer"
+                name="Referral_Incentive"
               ></textarea>
             </div>
             <div class="mb-3 mt-4">
@@ -216,7 +216,7 @@
                 type="text"
                 class="form-control border-warning"
                 id="intrest"
-                name="intrest"
+                name="Interested"
                 placeholder="Yes / No"
               />
             </div>
@@ -236,103 +236,6 @@
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
-      <!-- <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-5 col-md-6">
-              <div class="footer-info">
-                <a href="index.html" class="logo me-auto me-lg-0"
-                  ><img
-                    src="assets/img/knitpocketLogo.png"
-                    alt=""
-                    class="img-fluid footerlogo"
-                /></a>
-
-                <p>
-                  <strong>Phone : </strong>+91 85860 99551<br />
-                  <strong>Email : </strong> hello@knitpocket.com <br />
-                </p>
-                <div class="social-links mt-3">
-                  <a
-                    href="mailto:hello@knitpocket.com"
-                    target="_blank"
-                    class="gmail"
-                    ><i class="fa-regular fa-envelope"></i
-                  ></a>
-                  <a href="tel:8586099551" class="mobileno"
-                    ><i class="bx bx-phone-call"></i
-                  ></a>
-                  <a
-                    href="http://wa.me/919819987955?text=Hello KnitPocketer!!"
-                    target="_blank"
-                    class="whatsapp"
-                    ><i class="fa-brands fa-whatsapp"></i
-                  ></a>
-                  <a
-                    href="https://www.instagram.com/knitpocket/"
-                    target="_blank"
-                    class="instagram"
-                    ><i class="bx bxl-instagram"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="index.html">Home</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="index.html#about-boxes">About us</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="index.html#approach">Our Approach</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="index.html#services"> Our Services</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="index.html#contact">Contact us </a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-lg-4 col-md-6 footer-links">
-              <h4>Our Services</h4>
-              <ul>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="index.html#services">Brand Strategy</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="index.html#services">Conceptualisation</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="index.html#services">Digital Marketing</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="index.html#services">Web Desigining</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="index.html#services">Android Testing</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
       <div class="container">
         <div class="copyright">
           &copy; Copyright <strong><span>Knit Pocket</span></strong
@@ -348,6 +251,23 @@
       class="back-to-top d-flex align-items-center justify-content-center"
       ><i class="bi bi-arrow-up-short"></i
     ></a>
+
+    <!-- Google Form JS -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzUaLtM-fp_URBKkFXknXm8t2FZd_GIPLUG0mWq-qoivvmMYIxuUZXryPhUolQeVXBYNA/exec";
+      const form = document.forms["google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) =>
+            alert("Thanks for filling this form..! We Will Contact You Soon...")
+          )
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
